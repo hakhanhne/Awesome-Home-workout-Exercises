@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54F921BA2881538C0048CFF9 /* Awesome_Home_workout_ExercisesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F921B92881538C0048CFF9 /* Awesome_Home_workout_ExercisesApp.swift */; };
+		54F921BC2881538C0048CFF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F921BB2881538C0048CFF9 /* ContentView.swift */; };
+		54F921BE2881538D0048CFF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F921BD2881538D0048CFF9 /* Assets.xcassets */; };
+		54F921C12881538D0048CFF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F921C02881538D0048CFF9 /* Preview Assets.xcassets */; };
+		54F921C8288155930048CFF9 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F921C7288155930048CFF9 /* Exercise.swift */; };
+		54F921CA288166F50048CFF9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F921C9288166F50048CFF9 /* CardView.swift */; };
+		54FE5F9E288FBC6D00893A09 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE5F9D288FBC6D00893A09 /* SampleData.swift */; };
+		54FE5FA3288FBF3A00893A09 /* ExerciseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE5FA2288FBF3A00893A09 /* ExerciseCard.swift */; };
+		54FE5FA5288FC6FF00893A09 /* ExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE5FA4288FC6FF00893A09 /* ExerciseList.swift */; };
+		54FE5FA7288FC76400893A09 /* ExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE5FA6288FC76400893A09 /* ExerciseDetail.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		54F921B62881538C0048CFF9 /* Awesome Home-workout Exercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awesome Home-workout Exercises.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F921B92881538C0048CFF9 /* Awesome_Home_workout_ExercisesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Awesome_Home_workout_ExercisesApp.swift; sourceTree = "<group>"; };
+		54F921BB2881538C0048CFF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		54F921BD2881538D0048CFF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54F921C02881538D0048CFF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		54F921C7288155930048CFF9 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		54F921C9288166F50048CFF9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		54FE5F9D288FBC6D00893A09 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		54FE5FA2288FBF3A00893A09 /* ExerciseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCard.swift; sourceTree = "<group>"; };
+		54FE5FA4288FC6FF00893A09 /* ExerciseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseList.swift; sourceTree = "<group>"; };
+		54FE5FA6288FC76400893A09 /* ExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetail.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54F921B32881538C0048CFF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54F921AD2881538C0048CFF9 = {
+			isa = PBXGroup;
+			children = (
+				54F921B82881538C0048CFF9 /* Awesome Home-workout Exercises */,
+				54F921B72881538C0048CFF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54F921B72881538C0048CFF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54F921B62881538C0048CFF9 /* Awesome Home-workout Exercises.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54F921B82881538C0048CFF9 /* Awesome Home-workout Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				54F921BD2881538D0048CFF9 /* Assets.xcassets */,
+				54F921B92881538C0048CFF9 /* Awesome_Home_workout_ExercisesApp.swift */,
+				54F921BB2881538C0048CFF9 /* ContentView.swift */,
+				54FE5F9F288FBCC100893A09 /* Model */,
+				54FE5FA0288FBCE100893A09 /* Exercise List Page */,
+				54FE5FA1288FBD3C00893A09 /* Exercise Detail Page */,
+				54F921BF2881538D0048CFF9 /* Preview Content */,
+			);
+			path = "Awesome Home-workout Exercises";
+			sourceTree = "<group>";
+		};
+		54F921BF2881538D0048CFF9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				54F921C02881538D0048CFF9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		54FE5F9F288FBCC100893A09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54F921C7288155930048CFF9 /* Exercise.swift */,
+				54FE5F9D288FBC6D00893A09 /* SampleData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54FE5FA0288FBCE100893A09 /* Exercise List Page */ = {
+			isa = PBXGroup;
+			children = (
+				54F921C9288166F50048CFF9 /* CardView.swift */,
+				54FE5FA2288FBF3A00893A09 /* ExerciseCard.swift */,
+				54FE5FA4288FC6FF00893A09 /* ExerciseList.swift */,
+			);
+			path = "Exercise List Page";
+			sourceTree = "<group>";
+		};
+		54FE5FA1288FBD3C00893A09 /* Exercise Detail Page */ = {
+			isa = PBXGroup;
+			children = (
+				54FE5FA6288FC76400893A09 /* ExerciseDetail.swift */,
+			);
+			path = "Exercise Detail Page";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54F921B52881538C0048CFF9 /* Awesome Home-workout Exercises */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54F921C42881538D0048CFF9 /* Build configuration list for PBXNativeTarget "Awesome Home-workout Exercises" */;
+			buildPhases = (
+				54F921B22881538C0048CFF9 /* Sources */,
+				54F921B32881538C0048CFF9 /* Frameworks */,
+				54F921B42881538C0048CFF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Awesome Home-workout Exercises";
+			productName = "Awesome Home-workout Exercises";
+			productReference = 54F921B62881538C0048CFF9 /* Awesome Home-workout Exercises.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54F921AE2881538C0048CFF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					54F921B52881538C0048CFF9 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 54F921B12881538C0048CFF9 /* Build configuration list for PBXProject "Awesome Home-workout Exercises" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54F921AD2881538C0048CFF9;
+			productRefGroup = 54F921B72881538C0048CFF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54F921B52881538C0048CFF9 /* Awesome Home-workout Exercises */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54F921B42881538C0048CFF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F921C12881538D0048CFF9 /* Preview Assets.xcassets in Resources */,
+				54F921BE2881538D0048CFF9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54F921B22881538C0048CFF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F921BC2881538C0048CFF9 /* ContentView.swift in Sources */,
+				54F921BA2881538C0048CFF9 /* Awesome_Home_workout_ExercisesApp.swift in Sources */,
+				54FE5FA7288FC76400893A09 /* ExerciseDetail.swift in Sources */,
+				54F921CA288166F50048CFF9 /* CardView.swift in Sources */,
+				54FE5FA5288FC6FF00893A09 /* ExerciseList.swift in Sources */,
+				54FE5FA3288FBF3A00893A09 /* ExerciseCard.swift in Sources */,
+				54FE5F9E288FBC6D00893A09 /* SampleData.swift in Sources */,
+				54F921C8288155930048CFF9 /* Exercise.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		54F921C22881538D0048CFF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54F921C32881538D0048CFF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54F921C52881538D0048CFF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Awesome Home-workout Exercises/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rmit.hakhanhne.Awesome-Home-workout-Exercises";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54F921C62881538D0048CFF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Awesome Home-workout Exercises/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rmit.hakhanhne.Awesome-Home-workout-Exercises";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54F921B12881538C0048CFF9 /* Build configuration list for PBXProject "Awesome Home-workout Exercises" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F921C22881538D0048CFF9 /* Debug */,
+				54F921C32881538D0048CFF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54F921C42881538D0048CFF9 /* Build configuration list for PBXNativeTarget "Awesome Home-workout Exercises" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F921C52881538D0048CFF9 /* Debug */,
+				54F921C62881538D0048CFF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54F921AE2881538C0048CFF9 /* Project object */;
+}
