@@ -7,25 +7,34 @@
 
 import SwiftUI
 
-let coloredNavAppearance = UINavigationBarAppearance()
-let backItem = UIBarButtonItem()
+let nav = UINavigationBarAppearance()
+let navButton = UIBarButtonItemAppearance()
 
 struct ExerciseList: View {
     init() {
-        coloredNavAppearance.configureWithOpaqueBackground()
-        coloredNavAppearance.backgroundImage = UIImage(named: "background1")
-//        coloredNavAppearance.backgroundColor = .systemPink
-//        coloredNavAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        coloredNavAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        nav.configureWithOpaqueBackground()
+        nav.backgroundImage = UIImage(named: "background1")
         
-        backItem.title = "< back"
-               
-        UINavigationBar.appearance().standardAppearance = coloredNavAppearance
-        UINavigationBar.appearance().scrollEdgeAppearance = coloredNavAppearance
+        nav.titleTextAttributes = [.foregroundColor: UIColor.white]
+        nav.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        nav.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 0)
+        
+//        navButton.normal.titleTextAttributes = [.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().tintColor = UIColor.white
+
+//        let transNav = nav.copy()
+//        transNav.configureWithTransparentBackground()
+        
+        UINavigationBar.appearance().standardAppearance = nav
+        UINavigationBar.appearance().compactAppearance = nav
+        UINavigationBar.appearance().scrollEdgeAppearance = nav
+        
 
     }
     var body: some View {
         NavigationView {
+            
             List(exercises) { e in
                 NavigationLink {
                     ExerciseDetail(exercise: e)
