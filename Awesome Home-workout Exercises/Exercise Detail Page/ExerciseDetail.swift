@@ -10,20 +10,23 @@ import SwiftUI
 struct ExerciseDetail: View {
     var exercise: Exercise
     var body: some View {
-        VStack (alignment: .leading){
-            AsyncImage(
-                url: exercise.thumbnailUrl,
-                content: {image in
-                    image.resizable()
-                        .frame(height: 230)
-                    
-                },
-                placeholder: {
-                    ProgressView()
-                })
-            Text(exercise.title)
+        ZStack {
+            VStack (alignment: .leading){
+                AsyncImage(
+                    url: exercise.thumbnailUrl,
+                    content: {image in
+                        image.resizable()
+                            .frame(height: 230)
+                        
+                    },
+                    placeholder: {
+                        ProgressView()
+                    }
+                )
+                Text(exercise.title)
+                Spacer()
+            }
         }
-        .padding()
     }
 }
 
