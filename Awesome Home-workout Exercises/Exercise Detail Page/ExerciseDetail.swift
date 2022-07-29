@@ -12,19 +12,20 @@ struct ExerciseDetail: View {
     var body: some View {
         ZStack {
             VStack (alignment: .leading){
-                AsyncImage(
-                    url: exercise.thumbnailUrl,
-                    content: {image in
-                        image.resizable()
-                            .frame(height: 230)
-                        
-                    },
-                    placeholder: {
-                        ProgressView()
-                    }
-                )
+                AsyncImage(url: exercise.thumbnailUrl) { image in
+                    image
+                        .resizable()
+                } placeholder: {
+                    ProgressView()
+                }
+                .frame(height: 230)
+                
                 Text(exercise.title)
+                
+                AuthorBar(exercise: exercise)
                 Spacer()
+                
+                
             }
         }
     }
