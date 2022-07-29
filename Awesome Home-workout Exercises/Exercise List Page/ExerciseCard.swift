@@ -10,10 +10,10 @@ import SwiftUI
 struct ExerciseCard: View {
     var exercise: Exercise
     var body: some View {
-        ZStack {
+        ZStack (alignment: .leading) {
             Color.white
             
-            HStack (alignment: .center) {
+            HStack (alignment: .top) {
                 AsyncImage(url: exercise.thumbnailUrl) { image in
                     image
                         .resizable()
@@ -22,29 +22,22 @@ struct ExerciseCard: View {
                 }
                 .frame(width: 80, height: 80)
                 
-//                AsyncImage(
-//                    url: exercise.thumbnailUrl,
-//                    content: {image in
-//                        image.resizable()
-//                            .frame(width: 80, height: 80)
-//
-//                    },
-//                    placeholder: {
-//                        ProgressView()
-//                    })
+                
                 VStack (alignment: .leading, spacing: 5){
                     Text(exercise.title)
-                        .font(.system(size: 18))
-                    Text(exercise.author)
                         .font(.system(size: 15))
-                        .foregroundColor(.gray)
+                    
+                    HStack {
+                        CircularImage(imgUrl: exercise.authorUrl, size: 20.0)
                         
+                        Text(exercise.author)
+                            .font(.system(size: 14))
+                            .foregroundColor(.gray)
+                    }
                 }
                 
-//                Text(">")
-//                    .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
-                
             }
+            .frame(height: 85, alignment: .topLeading)
             
         }
         

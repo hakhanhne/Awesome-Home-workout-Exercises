@@ -26,15 +26,15 @@ struct ExerciseList: View {
 
     }
     
-    private var splashImageBackground: some View {
-            GeometryReader { geometry in
-                Image("background")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .edgesIgnoringSafeArea(.all)
-                    .frame(width: geometry.size.width)
-            }
-        }
+//    private var splashImageBackground: some View {
+//        GeometryReader { geometry in
+//            Image("background")
+//                .resizable()
+//                .aspectRatio(contentMode: .fill)
+//                .edgesIgnoringSafeArea(.all)
+//                .frame(width: geometry.size.width)
+//        }
+//    }
     
     var body: some View {
         
@@ -75,29 +75,6 @@ struct ExerciseList: View {
 //                )
 //        }
 //        //-------------
-
-        
-        
-//        ZStack {
-//            Image("background")
-//                .resizable()
-//                .scaledToFill()
-//                .aspectRatio(contentMode: .fit)
-//
-//
-//            NavigationView {
-//                List(exercises) { e in
-//                    NavigationLink {
-//                        ExerciseDetail(exercise: e)
-//                    } label: {
-//                        ExerciseCard(exercise: e)
-//                    }
-//                    .navigationTitle("Home-workout Exercises")
-//                    .navigationBarTitleDisplayMode(.inline)
-//
-//                }
-//            }
-//        }
         
         
     }

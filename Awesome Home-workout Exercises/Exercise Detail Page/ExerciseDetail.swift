@@ -21,6 +21,7 @@ struct ExerciseDetail: View {
                 .frame(height: 230)
                 
                 Text(exercise.title)
+                    .padding(.leading)
                 
                 AuthorBar(exercise: exercise)
                 Spacer()

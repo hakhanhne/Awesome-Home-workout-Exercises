@@ -11,15 +11,7 @@ struct AuthorBar: View {
     var exercise: Exercise
     var body: some View {
         VStack (alignment: .center, spacing: 15) {
-            AsyncImage(url: exercise.authorUrl) { image in
-                image
-                    .resizable()
-                    .scaledToFill()
-            } placeholder: {
-                ProgressView()
-            }
-            .frame(width: 120, height: 120)
-            .clipShape(Circle())
+            CircularImage(imgUrl: exercise.authorUrl, size: 120.0)
             
             Text(exercise.author)
                 .foregroundColor(Color.gray)

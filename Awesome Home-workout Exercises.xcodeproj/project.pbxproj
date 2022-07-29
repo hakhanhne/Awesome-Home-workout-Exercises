@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		546A3AB228938262002D01D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546A3AB128938262002D01D4 /* Main.storyboard */; };
 		546A3AB42893841F002D01D4 /* AuthorBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A3AB32893841F002D01D4 /* AuthorBar.swift */; };
+		54DFD5B52893DB7800F55F4C /* CircularImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFD5B42893DB7800F55F4C /* CircularImage.swift */; };
 		54F921BA2881538C0048CFF9 /* Awesome_Home_workout_ExercisesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F921B92881538C0048CFF9 /* Awesome_Home_workout_ExercisesApp.swift */; };
 		54F921BC2881538C0048CFF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F921BB2881538C0048CFF9 /* ContentView.swift */; };
 		54F921BE2881538D0048CFF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F921BD2881538D0048CFF9 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		546A3AB128938262002D01D4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		546A3AB32893841F002D01D4 /* AuthorBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorBar.swift; sourceTree = "<group>"; };
+		54DFD5B42893DB7800F55F4C /* CircularImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImage.swift; sourceTree = "<group>"; };
 		54F921B62881538C0048CFF9 /* Awesome Home-workout Exercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awesome Home-workout Exercises.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F921B92881538C0048CFF9 /* Awesome_Home_workout_ExercisesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Awesome_Home_workout_ExercisesApp.swift; sourceTree = "<group>"; };
 		54F921BB2881538C0048CFF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		54FE5F9F288FBCC100893A09 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				54DFD5B42893DB7800F55F4C /* CircularImage.swift */,
 				54F921C7288155930048CFF9 /* Exercise.swift */,
 				54FE5F9D288FBC6D00893A09 /* SampleData.swift */,
 			);
@@ -188,6 +191,7 @@
 			files = (
 				54F921BC2881538C0048CFF9 /* ContentView.swift in Sources */,
 				546A3AB42893841F002D01D4 /* AuthorBar.swift in Sources */,
+				54DFD5B52893DB7800F55F4C /* CircularImage.swift in Sources */,
 				54F921BA2881538C0048CFF9 /* Awesome_Home_workout_ExercisesApp.swift in Sources */,
 				54FE5FA7288FC76400893A09 /* ExerciseDetail.swift in Sources */,
 				54F921CA288166F50048CFF9 /* CardView.swift in Sources */,
