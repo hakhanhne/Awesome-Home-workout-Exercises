@@ -15,3 +15,4 @@ struct Awesome_Home_workout_ExercisesApp: App {
         }
     }
 }
+

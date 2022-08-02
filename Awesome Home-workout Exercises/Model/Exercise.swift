@@ -11,8 +11,9 @@ import SwiftUI
 
 struct Exercise: Identifiable {
     var id = UUID()
-    var title, author, description: String
-    var thumbnail, video, authorImg: String
+    var author: Author
+    var title, description: String
+    var thumbnail, video: String
     var thumbnailUrl : URL {
         URL(string: thumbnail)!
     }
@@ -21,25 +22,24 @@ struct Exercise: Identifiable {
         URL(string: video)!
     }
     
-    var authorUrl : URL {
-        URL(string: authorImg)!
+    var category: [String]
+    var publishedDate: String
+    
+    static func == (exercise1: Exercise, exercise2: Exercise) -> Bool {
+        return (exercise1.id == exercise2.id && exercise1.title == exercise2.title)
     }
     
-    var category: [String]
-//    var length: Int
-//    var views: UInt32
-    var publishedDate: String
-
+    func isFav() -> Bool {
+        for e in favList {
+            if self == e {return true}
+        }
+        return false
+    }
     
-//    init(title: String, author: String, description: String, thumbnail: String, video: String, category: [String]) {
-//        self.title = title
-//        self.thumbnail = URL(string: thumbnail)!
-//        self.video = URL(string: video)!
-//        self.author = author
-//        self.category = category
-//        self.description = description
-//    }
+    func openUrl(url: URL) {
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
 
-    
+
 }
 

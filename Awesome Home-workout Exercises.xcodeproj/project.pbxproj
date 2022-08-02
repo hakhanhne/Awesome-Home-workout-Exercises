@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		546A3AB228938262002D01D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546A3AB128938262002D01D4 /* Main.storyboard */; };
+		541758802894D8C100A42108 /* Awesome-Home-workout-Exercises-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5417587F2894D89100A42108 /* Awesome-Home-workout-Exercises-Info.plist */; };
+		5417588A2894DDF800A42108 /* ExerciseCard2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541758892894DDF800A42108 /* ExerciseCard2.swift */; };
+		54484EFB2898FAE90020B676 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54484EFA2898FAE90020B676 /* VideoController.swift */; };
 		546A3AB42893841F002D01D4 /* AuthorBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A3AB32893841F002D01D4 /* AuthorBar.swift */; };
 		54DFD5B52893DB7800F55F4C /* CircularImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFD5B42893DB7800F55F4C /* CircularImage.swift */; };
 		54F921BA2881538C0048CFF9 /* Awesome_Home_workout_ExercisesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F921B92881538C0048CFF9 /* Awesome_Home_workout_ExercisesApp.swift */; };
@@ -15,15 +17,16 @@
 		54F921BE2881538D0048CFF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F921BD2881538D0048CFF9 /* Assets.xcassets */; };
 		54F921C12881538D0048CFF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F921C02881538D0048CFF9 /* Preview Assets.xcassets */; };
 		54F921C8288155930048CFF9 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F921C7288155930048CFF9 /* Exercise.swift */; };
-		54F921CA288166F50048CFF9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F921C9288166F50048CFF9 /* CardView.swift */; };
+		54FD26CA2896194700813DB6 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD26C92896194700813DB6 /* Author.swift */; };
 		54FE5F9E288FBC6D00893A09 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE5F9D288FBC6D00893A09 /* SampleData.swift */; };
-		54FE5FA3288FBF3A00893A09 /* ExerciseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE5FA2288FBF3A00893A09 /* ExerciseCard.swift */; };
 		54FE5FA5288FC6FF00893A09 /* ExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE5FA4288FC6FF00893A09 /* ExerciseList.swift */; };
 		54FE5FA7288FC76400893A09 /* ExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE5FA6288FC76400893A09 /* ExerciseDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		546A3AB128938262002D01D4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5417587F2894D89100A42108 /* Awesome-Home-workout-Exercises-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Awesome-Home-workout-Exercises-Info.plist"; sourceTree = SOURCE_ROOT; };
+		541758892894DDF800A42108 /* ExerciseCard2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCard2.swift; sourceTree = "<group>"; };
+		54484EFA2898FAE90020B676 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		546A3AB32893841F002D01D4 /* AuthorBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorBar.swift; sourceTree = "<group>"; };
 		54DFD5B42893DB7800F55F4C /* CircularImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImage.swift; sourceTree = "<group>"; };
 		54F921B62881538C0048CFF9 /* Awesome Home-workout Exercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awesome Home-workout Exercises.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,9 +35,8 @@
 		54F921BD2881538D0048CFF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54F921C02881538D0048CFF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		54F921C7288155930048CFF9 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		54F921C9288166F50048CFF9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		54FD26C92896194700813DB6 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		54FE5F9D288FBC6D00893A09 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
-		54FE5FA2288FBF3A00893A09 /* ExerciseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCard.swift; sourceTree = "<group>"; };
 		54FE5FA4288FC6FF00893A09 /* ExerciseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseList.swift; sourceTree = "<group>"; };
 		54FE5FA6288FC76400893A09 /* ExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +71,7 @@
 		54F921B82881538C0048CFF9 /* Awesome Home-workout Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				5417587F2894D89100A42108 /* Awesome-Home-workout-Exercises-Info.plist */,
 				54F921BD2881538D0048CFF9 /* Assets.xcassets */,
 				54F921B92881538C0048CFF9 /* Awesome_Home_workout_ExercisesApp.swift */,
 				54F921BB2881538C0048CFF9 /* ContentView.swift */,
@@ -76,7 +79,7 @@
 				54FE5FA0288FBCE100893A09 /* Exercise List Page */,
 				54FE5FA1288FBD3C00893A09 /* Exercise Detail Page */,
 				54F921BF2881538D0048CFF9 /* Preview Content */,
-				546A3AB128938262002D01D4 /* Main.storyboard */,
+				54484EFA2898FAE90020B676 /* VideoController.swift */,
 			);
 			path = "Awesome Home-workout Exercises";
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				54DFD5B42893DB7800F55F4C /* CircularImage.swift */,
 				54F921C7288155930048CFF9 /* Exercise.swift */,
 				54FE5F9D288FBC6D00893A09 /* SampleData.swift */,
+				54FD26C92896194700813DB6 /* Author.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -102,9 +106,8 @@
 		54FE5FA0288FBCE100893A09 /* Exercise List Page */ = {
 			isa = PBXGroup;
 			children = (
-				54F921C9288166F50048CFF9 /* CardView.swift */,
 				54FE5FA4288FC6FF00893A09 /* ExerciseList.swift */,
-				54FE5FA2288FBF3A00893A09 /* ExerciseCard.swift */,
+				541758892894DDF800A42108 /* ExerciseCard2.swift */,
 			);
 			path = "Exercise List Page";
 			sourceTree = "<group>";
@@ -176,7 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546A3AB228938262002D01D4 /* Main.storyboard in Resources */,
+				541758802894D8C100A42108 /* Awesome-Home-workout-Exercises-Info.plist in Resources */,
 				54F921C12881538D0048CFF9 /* Preview Assets.xcassets in Resources */,
 				54F921BE2881538D0048CFF9 /* Assets.xcassets in Resources */,
 			);
@@ -192,11 +195,12 @@
 				54F921BC2881538C0048CFF9 /* ContentView.swift in Sources */,
 				546A3AB42893841F002D01D4 /* AuthorBar.swift in Sources */,
 				54DFD5B52893DB7800F55F4C /* CircularImage.swift in Sources */,
+				5417588A2894DDF800A42108 /* ExerciseCard2.swift in Sources */,
+				54484EFB2898FAE90020B676 /* VideoController.swift in Sources */,
 				54F921BA2881538C0048CFF9 /* Awesome_Home_workout_ExercisesApp.swift in Sources */,
 				54FE5FA7288FC76400893A09 /* ExerciseDetail.swift in Sources */,
-				54F921CA288166F50048CFF9 /* CardView.swift in Sources */,
 				54FE5FA5288FC6FF00893A09 /* ExerciseList.swift in Sources */,
-				54FE5FA3288FBF3A00893A09 /* ExerciseCard.swift in Sources */,
+				54FD26CA2896194700813DB6 /* Author.swift in Sources */,
 				54FE5F9E288FBC6D00893A09 /* SampleData.swift in Sources */,
 				54F921C8288155930048CFF9 /* Exercise.swift in Sources */,
 			);
@@ -331,7 +335,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Awesome Home-workout Exercises/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Awesome-Home-workout-Exercises-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -359,7 +363,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Awesome Home-workout Exercises/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Awesome-Home-workout-Exercises-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

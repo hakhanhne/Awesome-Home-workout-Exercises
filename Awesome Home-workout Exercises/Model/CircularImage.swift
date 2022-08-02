@@ -26,6 +26,6 @@ struct CircularImage: View {
 
 struct CircularImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircularImage(imgUrl: exercises[0].authorUrl, size: 50)
+        CircularImage(imgUrl: exercises[0].author.authorUrl, size: 50)
     }
 }

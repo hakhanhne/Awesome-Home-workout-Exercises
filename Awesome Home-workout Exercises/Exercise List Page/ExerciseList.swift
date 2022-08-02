@@ -7,78 +7,136 @@
 
 import SwiftUI
 
-let nav = UINavigationBarAppearance()
-let navButton = UIBarButtonItemAppearance()
 
 struct ExerciseList: View {
     init() {
-        nav.configureWithTransparentBackground()
+        let nav = UINavigationBarAppearance()
         
-        nav.backgroundColor = UIColor(red: 237/255, green: 183/255, blue: 183/255, alpha: 1.0)
-        nav.titleTextAttributes = [.foregroundColor: UIColor.white]
-        nav.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        nav.configureWithOpaqueBackground()
+        nav.backgroundColor = UIColor(named: "CutiePink")
+        nav.titleTextAttributes = [.font : UIFont(name: "Chalkboard SE Bold", size: 30)!, .foregroundColor: UIColor.white]
+        nav.largeTitleTextAttributes = [.font : UIFont(name: "Chalkboard SE Bold", size: 30)!, .foregroundColor: UIColor.white]
         
-        UINavigationBar.appearance().tintColor = UIColor.white        
-        UINavigationBar.appearance().standardAppearance = nav
-        UINavigationBar.appearance().compactAppearance = nav
+        let nav2 = nav.copy()
+        nav2.titleTextAttributes = [.font : UIFont(name: "Chalkboard SE", size: 18)!, .foregroundColor: UIColor.white]
+        
+//        let navController = UINavigationController()
+//        let navigationBar = navController.navigationBar
+//
+//
+//            let firstFrame = CGRect(x: 0, y: 0, width: navigationBar.frame.width/2, height: navigationBar.frame.height)
+//            let secondFrame = CGRect(x: navigationBar.frame.width/2, y: 0, width: navigationBar.frame.width/2, height: navigationBar.frame.height)
+//
+//            let firstLabel = UILabel(frame: firstFrame)
+//            firstLabel.text = "First"
+//
+//            let secondLabel = UILabel(frame: secondFrame)
+//            secondLabel.text = "Second"
+//
+//            navigationBar.addSubview(firstLabel)
+//            navigationBar.addSubview(secondLabel)
+    
+        
+        let button = UIBarButtonItemAppearance(style: .plain)
+        button.normal.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Chalkboard SE", size: 20)!]
+        nav.buttonAppearance = button
+        
+        let navigationItem = UINavigationItem()
+        let searchController = UISearchController(searchResultsController: nil)
+        navigationItem.hidesSearchBarWhenScrolling = false
+        navigationItem.searchController = searchController
+        
+        UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().scrollEdgeAppearance = nav
-
+        UINavigationBar.appearance().standardAppearance = nav
+        UINavigationBar.appearance().compactAppearance = nav2
+        
+    
 
     }
     
-//    private var splashImageBackground: some View {
-//        GeometryReader { geometry in
-//            Image("background")
-//                .resizable()
-//                .aspectRatio(contentMode: .fill)
-//                .edgesIgnoringSafeArea(.all)
-//                .frame(width: geometry.size.width)
-//        }
-//    }
-    
-    var body: some View {
+    func check() {
         
-        NavigationView {
-            List(exercises) { e in
-                NavigationLink {
-                    ExerciseDetail(exercise: e)
-                } label: {
-                    ExerciseCard(exercise: e)
-                }
-                .navigationTitle("Home-workout Exercises")
-                .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    /* Search function */
+    @State private var queryString = ""
+    
+    var searchedExercises: [Exercise] { // 1
+        if queryString.isEmpty { return tabExercises }
+        else {
+            return tabExercises.filter { $0.title.localizedCaseInsensitiveContains(queryString) }
+        }
+    }
+    
+    @State private var tab = "home"
+    
+    var tabExercises : [Exercise] {
+        if (tab == "home") {return exercises}
+        else {return favList}
+    }
+    
+    
+    /* Body view */
+    var body: some View {
+        let buttons = HStack {
+            Button(action: {
+                tab = "home"
+            }) {
+                Image("home30").imageScale(.large)
+            }
+            
+            Spacer()
+                    
+            Button(action: {
+                tab = "fav"
+            }) {
+                Image("fav30")
             }
         }
-        
-        
-//        //-------this works
+            .padding([.trailing, .leading], 30)
+
+        VStack {
+            buttons
+
+            
+            NavigationView {
+                List (searchedExercises) { e in
+                    ZStack (alignment: .leading) {
+                        NavigationLink (destination: ExerciseDetail(exercise: e)) {
+                            EmptyView()
+                        }
+//                        .opacity(0)
+                        ExerciseCard2(exercise: e)
+                    }
+                }
+                .navigationBarTitle("Home-workout Exercises")
+                .navigationBarTitleDisplayMode(.inline)
+//                .navigationBarItems(
+//                    leading:
+//                        Button(action: {
+//                            tab = "home"
+//                        }) {
+//                            Image("icons8-home-30").imageScale(.large)
+//                        },
+//                    trailing:
 //
-//        NavigationView {
-//            splashImageBackground
-//                .overlay(
-//
-//                    VStack(alignment: .leading){
-//                        Text("Home-workout Exercises")
-//                            .font(.system(size: 30))
-//                            .foregroundColor(.black)
-//                        VStack (alignment: .leading){
-//                            ForEach(exercises) { e in
-//                                 NavigationLink {
-//                                     ExerciseDetail(exercise: e)
-//                                 } label: {
-//                                     ExerciseCard(exercise: e)
-//                                 }
-//                             }
-//                        }.padding(.bottom, 400)
-//
-//                    }
+//                        Button(action: {
+//                            tab = "fav"
+//                        }) {
+//                            Image("icons8-heart-30").imageScale(.large)
+//                        }
 //                )
-//        }
-//        //-------------
-        
+            }
+            .searchable(text: $queryString, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search exercise")
+        }
+        .background(Color(UIColor(named: "CutiePink")!))
         
     }
+    
 }
+
+
 
 struct ExerciseList_Previews: PreviewProvider {
     static var previews: some View {
