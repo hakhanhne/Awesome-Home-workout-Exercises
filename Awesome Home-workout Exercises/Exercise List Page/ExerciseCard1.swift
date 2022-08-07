@@ -15,8 +15,8 @@
 
 import SwiftUI
 
-/* Struct for card style in root view */
-struct ExerciseCard2: View {
+/* Struct for card style in detail view */
+struct ExerciseCard1: View {
     var exercise: Exercise
     
     var body: some View {
@@ -30,47 +30,32 @@ struct ExerciseCard2: View {
             } placeholder: {
                 ProgressView()
             }
-            .frame(height: 160)
+            .frame(height: 150)
             
             //title
             Text(exercise.title)
-                .font(.system(size: 16))
+                .font(.system(size: 15))
                 .foregroundColor(.black)
                 .multilineTextAlignment(.leading)
             
-            //author (image and name) and icon (for exercise in fav list)
+            //author (image and name)
             HStack {
                 CircularImage(imgUrl: exercise.author.authorUrl, size: 30.0)
                 
                 Text(exercise.author.name)
-                    .font(.system(size: 15))
+                    .font(.system(size: 14))
                     .foregroundColor(.gray)
                  
                 Spacer()
-                
-                //check whether the exercise is fav or not, if it is then add the "heart" to the card
-                let image = chooseImg()
-                
-                image
             }
             
         }
-        .frame(height: 260, alignment: .topLeading)
-        .background(.white)
-        
-    }
-    
-    //check whether the exercise is fav or not, if it is then return "heart" image, else nil
-    func chooseImg() -> Image? {
-        if (exercise.isFav()) {
-            return Image("heart33")
-        }
-        return nil
+        .frame(width: 260, height: 260, alignment: .topLeading)
     }
 }
 
-struct ExerciseCard2_Previews: PreviewProvider {
+struct ExerciseCard1_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseCard2(exercise: exercises[0])
+        ExerciseCard1(exercise: exercises[0])
     }
 }

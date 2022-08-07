@@ -1,20 +1,30 @@
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 1
+  Author: Tran Nguyen Ha Khanh
+  ID: s3877707
+  Created  date: 26/07/2022
+  Last modified: 06/08/2022
+*/
 //
 //  SampleData.swift
 //  Awesome Home-workout Exercises
 //
-//  Created by Khanh Tran Nguyen Ha on 26/07/2022.
-//
 
 import Foundation
 
+
+//sample data: authors
 var pamela_reif: Author = Author(name: "Pamela Reif", authorImg: "https://p77-va.tiktokcdn.com/tos-maliva-avt-0068/4e3b640f1222badc6c12664c33145a1c~c5_720x720.jpeg", youtube: "https://www.youtube.com/c/PamelaRf1")
 var chloe_ting: Author = Author(name: "Chloe Ting", authorImg: "https://biographyninja.com/wp-content/uploads/2021/04/does-chloe-ting-work-for-guys.jpg", youtube: "https://www.youtube.com/c/ChloeTing")
 var madfit: Author = Author(name: "MadFit", authorImg: "https://yt3.ggpht.com/qIZlFAxnyGZ6NI0Vlk7l1hiYU6OcrmthrU0y9xvh6goHl5EO4sdsPxUzhBvuXuSonxqYYdqVKTU=s176-c-k-c0x00ffffff-no-rj", youtube: "https://www.youtube.com/c/MadFit")
 var growingannanas: Author = Author(name: "growingannanas", authorImg: "https://yt3.ggpht.com/ytc/AMLnZu-L2l-gGiIXksMxtsq2jf4V8MeZ75cwOf30vXzj0g=s176-c-k-c0x00ffffff-no-rj", youtube: "https://www.youtube.com/c/growingannanas")
-//var madfit: Author = Author(name: "Madfit", authorImg: "https://biographyninja.com/wp-content/uploads/2021/04/does-chloe-ting-work-for-guys.jpg")
-//var madfit: Author = Author(name: "Madfit", authorImg: "https://biographyninja.com/wp-content/uploads/2021/04/does-chloe-ting-work-for-guys.jpg")
+var caroline_girvan: Author = Author(name: "Caroline Girvan", authorImg: "https://yt3.ggpht.com/Y-D_T2ypbS0TZBcNO9I6DzsLY0pKBgtlsOpjZ5TXL2tzum5cZz8wIeQIo-cEvXZaAPulCmCADQ=s176-c-k-c0x00ffffff-no-rj", youtube: "https://www.youtube.com/c/CarolineGirvan")
 
 
+//sample data: exercises list (12 exercises)
 var exercises: [Exercise] =
 [
     Exercise(
@@ -55,10 +65,35 @@ var exercises: [Exercise] =
         7. Ed Sheeran – 2step feat. Lil Baby
         __
         """,
-        thumbnail: "https://img.youtube.com/vi/btCBYtUPEVU/maxresdefault.jpg",
-        video: "https://youtu.be/btCBYtUPEVU",
-        category: ["abs"],
+        thumbnail: "https://img.youtube.com/vi/_hwvmGZuBeY/maxresdefault.jpg",
+        video: "https://youtu.be/_hwvmGZuBeY",
+        category: "Abs",
         publishedDate: "May 25, 2022"),
+    
+    Exercise(
+        author: madfit,
+        title: "30 MIN BOOTY /LEG WORKOUT (dumbbell, at home)",
+        description: """
+        A dumbbell leg and booty workout you can do AT HOME! Use whatever weights you have access to at home and let's get to it!
+        #HomeWorkout #MadFit #Fitness
+
+        👉🏼 DOWNLOAD YOUR MADFIT APP FREE TRIAL HERE: https://madfit.app.link/e/store
+
+        ⭐️ DO THIS WARM UP FIRST: http://bit.ly/2riv8T6
+        ⭐️ APARTMENT FRIENDLY WARM UP: https://youtu.be/CSrBaHX3HxQ
+        ⭐️ DO THIS COOL DOWN AFTER (5 min): https://bit.ly/3zywpCu
+
+        👉🏼THE MAT I USE (Exercise 6X4): http://gorillamats.com?aff=19  (MADFIT10 for 10% off)
+
+        ✘ I N S T A G R A M: @madfit.ig
+        ✘ T W I T T E R: @maddielymburner
+        ✘ F A C E B O O K: facebook.com/madfit.ig
+        ✉ C O N T A C T (business inquiries): madfit95@gmail.com
+        """,
+        thumbnail: "https://img.youtube.com/vi/ccUElj0LB5A/maxresdefault.jpg",
+        video: "https://youtu.be/ccUElj0LB5A",
+        category: "Lowerbody",
+        publishedDate: "Dec 23, 2021"),
     
     Exercise(
         author: pamela_reif,
@@ -97,8 +132,112 @@ var exercises: [Exercise] =
         """,
         thumbnail: "https://img.youtube.com/vi/zr08J6wB53Y/maxresdefault.jpg",
         video: "https://youtu.be/zr08J6wB53Y",
-        category: ["hiit"],
+        category: "HIIT",
         publishedDate: "Aug 19, 2020"),
+    
+    Exercise(
+        author: pamela_reif,
+        title: "10 MIN HEARTBREAK AB WORKOUT - with Benson Boone, love & heartbreak songs I Pamela Reif",
+        description: """
+        Suffer with Benson & enjoy his BEAUTIFUL live performance in the end! / Werbung
+
+        Who says you need hardcore music to work out? In this video, we train our sixpack to love songs, embracing the pain of our abs (or our heart) in a dramatic way :D
+
+        ▸ as Benson says, it burns „furchtbar“.  That’s the German word for „horrible“ haha
+        ▸ slower, concentrated, abs burning like fire
+        ▸ Live Singing for Song 3!︎ Soooo beautiful, I can’t get enough
+
+        Benson was such a wonderful guest, we got along so well! My mom felt sorry for him, saying I went too hard for the workout lol. But I think he did amazing and… maybe the pain can count as input for a new song? :D
+
+        __
+
+        ▸ I burned about 60kcal in those 10min.
+        Depending on your height, weight and fitness level, it may differ from 50-100kcal.
+
+        __
+        
+        1. Benson Boone - ROOM FOR 2
+        2. Benson Boone - GHOST TOWN
+        3. Benson Boone - In the Stars
+
+        __
+        """,
+        thumbnail: "https://img.youtube.com/vi/btCBYtUPEVU/maxresdefault.jpg",
+        video: "https://youtu.be/btCBYtUPEVU",
+        category: "Abs",
+        publishedDate: "Jul 15, 2022"),
+    
+    Exercise(
+        author: caroline_girvan,
+        title: "20 MIN SOLID ARMS & SHOULDER WORKOUT with Dumbbells",
+        description: """
+        Let’s strengthen the shoulders, triceps and biceps in this 20 minute upper body workout!
+
+        I have included shoulders in this arm workout as for me, I love training shoulders!
+
+        The timer will be on for 40 seconds of work, 20 seconds rest!
+
+        All you will need is your mat and a pair of dumbbells. The dumbbells I am using for your reference are 8kg each.
+
+        There will be tips throughout, during the rest period. However please ensure you get the most out of this workout by performing full range each movement, controlling the lowering portion and elbows by sides during tricep push ups/presses and curls!
+
+        SHOULDER PRESS
+        FACING HOLD (x10 sec) TO PRESS
+        ALT PRESS90° AT ELBOW OPEN TO CLOSEALT HAMMER FRONTAL RAISES
+        BOTTOM/TOP/FULL RANGE RAISES
+        LATERAL RAISESHAMMER HOLD TO EXTERNAL ROTATE
+        PALMS UP HOLD W/ALT CURL
+        EXTERNAL ROTATE CURLS
+        CURL PULSES
+        SKULL CRUSHERS
+        OVERHEAD EXTENSION
+        TATE PRESS
+        DIAMOND PRESS (slow eccentric)
+        FASTER TEMPO TRICEP PRESS
+        COBRA DIAMOND PUSH UPUNEVEN PUSH UP
+        UNEVEN PUSH UP (switch)
+        SLOW TRICEP PUSH UP
+        HAMMER CURL TO PALMS FACING PRESS
+
+        Aim to really push that extra bit more, those 2 more reps! Take a rest when you aren’t able to maintain form perfectly!
+
+        """,
+        thumbnail: "https://img.youtube.com/vi/ME0cj3FTbms/maxresdefault.jpg",
+        video: "https://youtu.be/ME0cj3FTbms",
+        category: "Upperbody",
+        publishedDate: "Dec 5, 2020"),
+    
+    Exercise(
+        author: pamela_reif,
+        title: "10 MIN BADASS HIIT - sweaty workout to Hip Hop Music, lots of punches & kicks I Pamela Reif",
+        description: """
+        Want to feel like a proper Gangster & burn lots of calories… let’s gooooo! / Werbung
+
+        Uuuhhh that will switch up our workout life!
+        Let’s feel super BADASS & make those High Intensity Sessions more fun! Kick, Box, Punch - in all kinds of variations. And to elevate the coolness, I chose some good old Hip Hop / Rap songs. Hope you likeeeeee it!
+
+        ▸ HIIT: This will get your heart rate up, burn calories, burn fat, increase your metabolism, benefit your cardio & tone your muscles at the same time :)
+
+        __
+
+        Depending on your fitness level, height and weight you will burn between 70-110 kcal.
+        I burned about 70kcal in those 10min (remember, I'm a small human and my body is already adapted to plank jumps and burpees haha).
+
+        If you struggle or need a break: don't worry about it. Take a small rest, get something to drink & continue once you're ready :) most important is that you don't quit and push yourself.
+
+        __
+        
+        1. Bad Boy For Life – P.Diddy, Black Rob, Mark Curry
+        2. Belly Dancer - Imanbek, BYOR
+        3. Nail Tech – Jack Harlow
+        4. Shimmy Shimmy Ya – Ol’ Dirty Bastard
+
+        __
+        """,
+        thumbnail: "https://img.youtube.com/vi/8MgyyEFxrNw/maxresdefault.jpg",
+        video: "https://youtu.be/8MgyyEFxrNw",
+        category: "HIIT",
+        publishedDate: "Feb 23, 2022"),
     
     Exercise(
         author: chloe_ting,
@@ -127,7 +266,7 @@ var exercises: [Exercise] =
         """,
         thumbnail: "https://img.youtube.com/vi/2pLT-olgUJs/maxresdefault.jpg",
         video: "https://youtu.be/2pLT-olgUJs",
-        category: ["abs"],
+        category: "Abs",
         publishedDate: "Aug 12, 2019"),
     
     Exercise(
@@ -162,7 +301,7 @@ var exercises: [Exercise] =
         """,
         thumbnail: "https://img.youtube.com/vi/-CWPIgK4G-k/maxresdefault.jpg",
         video: "https://youtu.be/-CWPIgK4G-k",
-        category: ["lowerbody"],
+        category: "Lowerbody",
         publishedDate: "Oct 20, 2020"),
     
     Exercise(
@@ -195,7 +334,7 @@ var exercises: [Exercise] =
         """,
         thumbnail: "https://img.youtube.com/vi/oqaoE2cvbYg/maxresdefault.jpg",
         video: "https://youtu.be/oqaoE2cvbYg",
-        category: ["lowerbody"],
+        category: "Lowerbody",
         publishedDate: "Aug 12, 2019"),
     
     Exercise(
@@ -226,7 +365,7 @@ var exercises: [Exercise] =
         """,
         thumbnail: "https://img.youtube.com/vi/GJiEUi92-xE/maxresdefault.jpg",
         video: "https://youtu.be/GJiEUi92-xE",
-        category: ["upperbody"],
+        category: "Upperbody",
         publishedDate: "Mar 16, 2022"),
     
     Exercise(
@@ -264,7 +403,7 @@ var exercises: [Exercise] =
         """,
         thumbnail: "https://img.youtube.com/vi/vtD5nGoNMu8/maxresdefault.jpg",
         video: "https://youtu.be/vtD5nGoNMu8",
-        category: ["lowerbody"],
+        category: "Lowerbody",
         publishedDate: "Mar 23, 2021"),
     
     Exercise(
@@ -288,9 +427,10 @@ var exercises: [Exercise] =
         """,
         thumbnail: "https://img.youtube.com/vi/jpizoUy4K9s/maxresdefault.jpg",
         video: "https://youtu.be/jpizoUy4K9s",
-        category: ["hiit"],
+        category: "HIIT",
         publishedDate: "Dec 25, 2020")
 ]
 
 
-var favList: [Exercise] = [exercises[0], exercises[3]]
+//sample data: favorite list
+var favList: [Exercise] = [exercises[0], exercises[4], exercises[6], exercises[7], exercises[11]]
