@@ -87,14 +87,10 @@ struct ExerciseDetail: View {
                     
                 }, label: {
                     ZStack {
-                        //thumbnail
-                        AsyncImage(url: exercise.thumbnailUrl) { image in
-                            image
-                                .resizable()
-                        } placeholder: {
-                            ProgressView()
-                        }
-                        .frame(height: 230)
+                        //thumbnail 
+                        exercise.thumbnail
+                            .resizable()
+                            .frame(height: 230)
                         
                         //shadow effect
                         Rectangle()

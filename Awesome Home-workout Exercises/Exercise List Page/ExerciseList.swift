@@ -55,8 +55,8 @@ struct ExerciseList: View {
         let buttons = HStack {
             //button "home": tab "Home"
             Button(action: {
-                tab = "home"
                 NavigationUtil.popToRootView() //pop to root view from anywhere
+                tab = "home"
             }) {
                 Image("home27")
             }
@@ -65,8 +65,8 @@ struct ExerciseList: View {
                     
             //button "fav": tab "Favorite list"
             Button(action: {
-                tab = "fav"
                 NavigationUtil.popToRootView() //pop to root view from anywhere
+                tab = "fav"
             }) {
                 Image("fav27")
             }
@@ -98,8 +98,7 @@ struct TabView: View {
         let nav = UINavigationBarAppearance()
         
         nav.backgroundColor = UIColor(named: "CutiePink")
-        nav.titleTextAttributes = [.font : UIFont(name: "Chalkboard SE Bold", size: 28)!, .foregroundColor: UIColor.white]
-        nav.largeTitleTextAttributes = [.font : UIFont(name: "Chalkboard SE Bold", size: 28)!, .foregroundColor: UIColor.white]
+        nav.titleTextAttributes = [.font : UIFont(name: "Chalkboard SE Bold", size: 27)!, .foregroundColor: UIColor.white]
         
         let nav2 = nav.copy()
         nav2.titleTextAttributes = [.font : UIFont(name: "Chalkboard SE", size: 18)!, .foregroundColor: UIColor.white]

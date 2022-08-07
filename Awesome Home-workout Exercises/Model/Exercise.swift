@@ -22,10 +22,7 @@ struct Exercise: Identifiable {
     var id = UUID()
     var author: Author
     var title, description: String
-    var thumbnail, video: String
-    var thumbnailUrl : URL {
-        URL(string: thumbnail)!
-    }
+    var thumbnail_str, video: String
 
     var videoUrl : URL {
         URL(string: video)!
@@ -34,14 +31,14 @@ struct Exercise: Identifiable {
     var category: String
     var publishedDate: String
     
-    static func == (exercise1: Exercise, exercise2: Exercise) -> Bool {
-        return (exercise1.id == exercise2.id && exercise1.title == exercise2.title)
+    var thumbnail : Image{
+        Image(thumbnail_str)
     }
     
     /* This function checks whether an exercise is in favorite list or not*/
     func isFav() -> Bool {
         for e in favList {
-            if self == e {return true}
+            if self.title == e.title {return true}
         }
         return false
     }

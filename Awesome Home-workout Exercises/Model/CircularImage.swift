@@ -18,26 +18,30 @@ import SwiftUI
 
 /* Circular Image Model to create circula image based on given url and wanted size */
 struct CircularImage: View {
-    var imgUrl: URL
+//    var imgUrl: URL
+    var img: Image
     var size: Double
     var body: some View {
         
         //create circular image
-        AsyncImage(url: imgUrl) { image in
-            image
-                .resizable()
-                .scaledToFill()
-        } placeholder: {
-            ProgressView()
-        }
-        .frame(width: size, height: size)
-        .clipShape(Circle())
+//        AsyncImage(url: imgUrl) { image in
+//            image
+//                .resizable()
+//                .scaledToFill()
+//        } placeholder: {
+//            ProgressView()
+//        }
+        img
+            .resizable()
+            .scaledToFill()
+            .frame(width: size, height: size)
+            .clipShape(Circle())
 
     }
 }
 
 struct CircularImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircularImage(imgUrl: exercises[0].author.authorUrl, size: 50)
+        CircularImage(img: exercises[0].author.author_img, size: 50)
     }
 }

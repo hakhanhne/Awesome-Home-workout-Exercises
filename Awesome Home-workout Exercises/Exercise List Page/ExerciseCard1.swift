@@ -24,33 +24,29 @@ struct ExerciseCard1: View {
         //put exercise information in a VStack with white background
         VStack (alignment: .leading) {
             //thumbnail
-            AsyncImage(url: exercise.thumbnailUrl) { image in
-                image
-                    .resizable()
-            } placeholder: {
-                ProgressView()
-            }
-            .frame(height: 150)
+            exercise.thumbnail
+                .resizable()
+                .frame(height: 140)
             
             //title
             Text(exercise.title)
-                .font(.system(size: 15))
+                .font(.system(size: 14))
                 .foregroundColor(.black)
                 .multilineTextAlignment(.leading)
             
             //author (image and name)
             HStack {
-                CircularImage(imgUrl: exercise.author.authorUrl, size: 30.0)
+                CircularImage(img: exercise.author.author_img, size: 28.0)
                 
                 Text(exercise.author.name)
-                    .font(.system(size: 14))
+                    .font(.system(size: 13))
                     .foregroundColor(.gray)
                  
                 Spacer()
             }
             
         }
-        .frame(width: 260, height: 260, alignment: .topLeading)
+        .frame(width: 260, height: 250, alignment: .topLeading)
     }
 }
 

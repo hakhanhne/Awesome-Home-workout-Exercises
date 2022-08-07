@@ -24,13 +24,9 @@ struct ExerciseCard2: View {
         //put exercise information in a VStack with white background
         VStack (alignment: .leading) {
             //thumbnail
-            AsyncImage(url: exercise.thumbnailUrl) { image in
-                image
-                    .resizable()
-            } placeholder: {
-                ProgressView()
-            }
-            .frame(height: 160)
+            exercise.thumbnail
+                .resizable()
+                .frame(height: 160)
             
             //title
             Text(exercise.title)
@@ -40,7 +36,7 @@ struct ExerciseCard2: View {
             
             //author (image and name) and icon (for exercise in fav list)
             HStack {
-                CircularImage(imgUrl: exercise.author.authorUrl, size: 30.0)
+                CircularImage(img: exercise.author.author_img, size: 30.0)
                 
                 Text(exercise.author.name)
                     .font(.system(size: 15))

@@ -17,11 +17,11 @@ import Foundation
 
 
 //sample data: authors
-var pamela_reif: Author = Author(name: "Pamela Reif", authorImg: "https://p77-va.tiktokcdn.com/tos-maliva-avt-0068/4e3b640f1222badc6c12664c33145a1c~c5_720x720.jpeg", youtube: "https://www.youtube.com/c/PamelaRf1")
-var chloe_ting: Author = Author(name: "Chloe Ting", authorImg: "https://biographyninja.com/wp-content/uploads/2021/04/does-chloe-ting-work-for-guys.jpg", youtube: "https://www.youtube.com/c/ChloeTing")
-var madfit: Author = Author(name: "MadFit", authorImg: "https://yt3.ggpht.com/qIZlFAxnyGZ6NI0Vlk7l1hiYU6OcrmthrU0y9xvh6goHl5EO4sdsPxUzhBvuXuSonxqYYdqVKTU=s176-c-k-c0x00ffffff-no-rj", youtube: "https://www.youtube.com/c/MadFit")
-var growingannanas: Author = Author(name: "growingannanas", authorImg: "https://yt3.ggpht.com/ytc/AMLnZu-L2l-gGiIXksMxtsq2jf4V8MeZ75cwOf30vXzj0g=s176-c-k-c0x00ffffff-no-rj", youtube: "https://www.youtube.com/c/growingannanas")
-var caroline_girvan: Author = Author(name: "Caroline Girvan", authorImg: "https://yt3.ggpht.com/Y-D_T2ypbS0TZBcNO9I6DzsLY0pKBgtlsOpjZ5TXL2tzum5cZz8wIeQIo-cEvXZaAPulCmCADQ=s176-c-k-c0x00ffffff-no-rj", youtube: "https://www.youtube.com/c/CarolineGirvan")
+var pamela_reif: Author = Author(name: "Pamela Reif", img_string: "a_pam", youtube: "https://www.youtube.com/c/PamelaRf1")
+var chloe_ting: Author = Author(name: "Chloe Ting", img_string: "a_chloe", youtube: "https://www.youtube.com/c/ChloeTing")
+var madfit: Author = Author(name: "MadFit", img_string: "a_madfit", youtube: "https://www.youtube.com/c/MadFit")
+var growingannanas: Author = Author(name: "growingannanas", img_string: "a_growingannanas", youtube: "https://www.youtube.com/c/growingannanas")
+var caroline_girvan: Author = Author(name: "Caroline Girvan", img_string: "a_caroline", youtube: "https://www.youtube.com/c/CarolineGirvan")
 
 
 //sample data: exercises list (12 exercises)
@@ -65,7 +65,7 @@ var exercises: [Exercise] =
         7. Ed Sheeran – 2step feat. Lil Baby
         __
         """,
-        thumbnail: "https://img.youtube.com/vi/_hwvmGZuBeY/maxresdefault.jpg",
+        thumbnail_str: "e0",
         video: "https://youtu.be/_hwvmGZuBeY",
         category: "Abs",
         publishedDate: "May 25, 2022"),
@@ -90,7 +90,7 @@ var exercises: [Exercise] =
         ✘ F A C E B O O K: facebook.com/madfit.ig
         ✉ C O N T A C T (business inquiries): madfit95@gmail.com
         """,
-        thumbnail: "https://img.youtube.com/vi/ccUElj0LB5A/maxresdefault.jpg",
+        thumbnail_str: "e1",
         video: "https://youtu.be/ccUElj0LB5A",
         category: "Lowerbody",
         publishedDate: "Dec 23, 2021"),
@@ -130,7 +130,7 @@ var exercises: [Exercise] =
 
         __
         """,
-        thumbnail: "https://img.youtube.com/vi/zr08J6wB53Y/maxresdefault.jpg",
+        thumbnail_str: "e2",
         video: "https://youtu.be/zr08J6wB53Y",
         category: "HIIT",
         publishedDate: "Aug 19, 2020"),
@@ -162,7 +162,7 @@ var exercises: [Exercise] =
 
         __
         """,
-        thumbnail: "https://img.youtube.com/vi/btCBYtUPEVU/maxresdefault.jpg",
+        thumbnail_str: "e3",
         video: "https://youtu.be/btCBYtUPEVU",
         category: "Abs",
         publishedDate: "Jul 15, 2022"),
@@ -202,7 +202,7 @@ var exercises: [Exercise] =
         Aim to really push that extra bit more, those 2 more reps! Take a rest when you aren’t able to maintain form perfectly!
 
         """,
-        thumbnail: "https://img.youtube.com/vi/ME0cj3FTbms/maxresdefault.jpg",
+        thumbnail_str: "e4",
         video: "https://youtu.be/ME0cj3FTbms",
         category: "Upperbody",
         publishedDate: "Dec 5, 2020"),
@@ -234,7 +234,7 @@ var exercises: [Exercise] =
 
         __
         """,
-        thumbnail: "https://img.youtube.com/vi/8MgyyEFxrNw/maxresdefault.jpg",
+        thumbnail_str: "e5",
         video: "https://youtu.be/8MgyyEFxrNw",
         category: "HIIT",
         publishedDate: "Feb 23, 2022"),
@@ -264,7 +264,7 @@ var exercises: [Exercise] =
 
         Party in Backyard - Bitch Lasagna Instrumental
         """,
-        thumbnail: "https://img.youtube.com/vi/2pLT-olgUJs/maxresdefault.jpg",
+        thumbnail_str: "e6",
         video: "https://youtu.be/2pLT-olgUJs",
         category: "Abs",
         publishedDate: "Aug 12, 2019"),
@@ -299,7 +299,7 @@ var exercises: [Exercise] =
 
         __
         """,
-        thumbnail: "https://img.youtube.com/vi/-CWPIgK4G-k/maxresdefault.jpg",
+        thumbnail_str: "e7",
         video: "https://youtu.be/-CWPIgK4G-k",
         category: "Lowerbody",
         publishedDate: "Oct 20, 2020"),
@@ -332,7 +332,7 @@ var exercises: [Exercise] =
         ✘ F A C E B O O K: facebook.com/madfit.ig
         ✉ C O N T A C T (business inquiries): madfit95@gmail.com
         """,
-        thumbnail: "https://img.youtube.com/vi/oqaoE2cvbYg/maxresdefault.jpg",
+        thumbnail_str: "e8",
         video: "https://youtu.be/oqaoE2cvbYg",
         category: "Lowerbody",
         publishedDate: "Aug 12, 2019"),
@@ -363,7 +363,7 @@ var exercises: [Exercise] =
 
         If you struggle or need a break: don't worry about it. Take a small rest, get something to drink & continue once you're ready :) most important is that you don't quit and push yourself.
         """,
-        thumbnail: "https://img.youtube.com/vi/GJiEUi92-xE/maxresdefault.jpg",
+        thumbnail_str: "e9",
         video: "https://youtu.be/GJiEUi92-xE",
         category: "Upperbody",
         publishedDate: "Mar 16, 2022"),
@@ -401,7 +401,7 @@ var exercises: [Exercise] =
 
         __
         """,
-        thumbnail: "https://img.youtube.com/vi/vtD5nGoNMu8/maxresdefault.jpg",
+        thumbnail_str: "e10",
         video: "https://youtu.be/vtD5nGoNMu8",
         category: "Lowerbody",
         publishedDate: "Mar 23, 2021"),
@@ -425,7 +425,7 @@ var exercises: [Exercise] =
 
         Music: https://www.epidemicsound.com
         """,
-        thumbnail: "https://img.youtube.com/vi/jpizoUy4K9s/maxresdefault.jpg",
+        thumbnail_str: "e11",
         video: "https://youtu.be/jpizoUy4K9s",
         category: "HIIT",
         publishedDate: "Dec 25, 2020")
@@ -434,3 +434,5 @@ var exercises: [Exercise] =
 
 //sample data: favorite list
 var favList: [Exercise] = [exercises[0], exercises[4], exercises[6], exercises[7], exercises[11]]
+
+

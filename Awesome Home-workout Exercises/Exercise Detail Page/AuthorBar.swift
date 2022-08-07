@@ -24,7 +24,7 @@ struct AuthorBar: View {
             
             //author image and name
             VStack (alignment: .leading, spacing: 15) {
-                CircularImage(imgUrl: exercise.author.authorUrl, size: 118.0)
+                CircularImage(img: exercise.author.author_img, size: 118.0)
                 
                 Text(exercise.author.name)
                     .foregroundColor(Color.gray)

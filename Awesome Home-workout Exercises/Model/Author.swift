@@ -21,11 +21,12 @@ import SwiftUI
 /* Author Model */
 struct Author: Identifiable {
     var id = UUID()
-    var name, authorImg, youtube: String
-    var authorUrl : URL {
-        URL(string: authorImg)!
-    }
+    var name, img_string, youtube: String
     var youtubeUrl : URL {
         URL(string: youtube)!
+    }
+    
+    var author_img : Image{
+        Image(img_string)
     }
 }
